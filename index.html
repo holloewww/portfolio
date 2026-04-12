@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugra - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-indicator" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header id="mainHeader">
+        <nav>
+            <a class="logo" href="#home" aria-label="Go to home">
+                <span class="logo-text">T</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+            <ul id="primaryNav">
+                <li><a href="#home" data-text="Home">Home</a></li>
+                <li><a href="#about" data-text="Over Mij">Over Mij</a></li>
+                <li><a href="#projects" data-text="Projecten">Projecten</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-name">TUGRA</span>
+            </h1>
+            <p class="hero-subtitle">Software Developer</p>
+            <div class="hero-bottom">
+                <div class="hero-desc">
+                    <p>Tweedejaars Software Development student bij het GLR. Ik bouw strakke, snelle websites en webapps.</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-magnetic" data-magnetic>
+                        <span class="btn-magnetic-text">Bekijk Werk</span>
+                        <span class="btn-magnetic-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5"/></svg>
+                        </span>
+                    </a>
+                    <a href="files/cv-tugra.pdf" class="btn-cv" download>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8M8 10l-3-3M8 10l3-3M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Download CV
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/tugrakilic/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/Hollow58" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="mailto:tugra58polat@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-left">
+                    <div class="section-label reveal-up">
+                        <span class="label-text">Over Mij</span>
+                    </div>
+                    <h2 class="about-heading reveal-up">
+                        Websites bouwen<br>
+                        die echt <em>werken</em><br>
+                        en er goed uitzien.
+                    </h2>
+                </div>
+                <div class="about-right">
+                    <div class="about-text-block reveal-up">
+                        <p>Ik houd ervan om ideeën om te zetten naar iets dat je echt kunt gebruiken: een website die soepel werkt, er goed uitziet en logisch in elkaar zit. Ik ben best precies met de details en ik vind het fijn als alles clean en duidelijk is.</p>
+                    </div>
+                    <div class="about-text-block reveal-up">
+                        <p>Op school werk ik veel met HTML, CSS en JavaScript. Daarnaast maak ik ook projecten met PHP. Met Node.js ben ik net begonnen, ik maak gebruik van Express.js en heb een paar databases gebouwd.</p>
+                    </div>
+                    <div class="about-text-block reveal-up">
+                        <p>Buiten school ben ik vaak bezig met kleine projecten om nieuwe dingen te proberen. Ik ben leergierig en ik probeer mijn werk elke keer een stukje beter te maken. Verder hou ik van muziek, films en gamen en soms haal ik daar ook inspiratie uit voor UI en animaties.</p>
+                    </div>
+                    <div class="skill-ratings reveal-up">
+                        <div class="rating-item">
+                            <span class="rating-name">HTML / CSS</span>
+                            <div class="rating-circles">
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                            </div>
+                        </div>
+                        <div class="rating-item">
+                            <span class="rating-name">JavaScript</span>
+                            <div class="rating-circles">
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle"></span>
+                            </div>
+                        </div>
+                        <div class="rating-item">
+                            <span class="rating-name">PHP</span>
+                            <div class="rating-circles">
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle"></span>
+                            </div>
+                        </div>
+                        <div class="rating-item">
+                            <span class="rating-name">Node.js</span>
+                            <div class="rating-circles">
+                                <span class="circle filled"></span>
+                                <span class="circle filled"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track" aria-hidden="true">
+            <span>WEBSITES &nbsp;-&nbsp; WEBAPPS &nbsp;-&nbsp; UI DESIGN &nbsp;-&nbsp; ANIMATIES &nbsp;-&nbsp; FRONTEND &nbsp;-&nbsp; BACKEND &nbsp;-&nbsp;&nbsp;</span>
+            <span>WEBSITES &nbsp;-&nbsp; WEBAPPS &nbsp;-&nbsp; UI DESIGN &nbsp;-&nbsp; ANIMATIES &nbsp;-&nbsp; FRONTEND &nbsp;-&nbsp; BACKEND &nbsp;-&nbsp;&nbsp;</span>
+            <span>WEBSITES &nbsp;-&nbsp; WEBAPPS &nbsp;-&nbsp; UI DESIGN &nbsp;-&nbsp; ANIMATIES &nbsp;-&nbsp; FRONTEND &nbsp;-&nbsp; BACKEND &nbsp;-&nbsp;&nbsp;</span>
+            <span>WEBSITES &nbsp;-&nbsp; WEBAPPS &nbsp;-&nbsp; UI DESIGN &nbsp;-&nbsp; ANIMATIES &nbsp;-&nbsp; FRONTEND &nbsp;-&nbsp; BACKEND &nbsp;-&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects" class="section-projects">
+        <div class="container">
+            <div class="section-label reveal-up">
+                <span class="label-text">Mijn Projecten</span>
+            </div>
+        </div>
+        <div class="projects-showcase">
+            <article class="project-item reveal-up">
+                <a href="https://102722.stu.sd-lab.nl/kh2/" target="_blank" rel="noopener noreferrer" class="project-link-wrap">
+                    <div class="project-index">01</div>
+                    <div class="project-image-cinema">
+                        <div class="project-img-inner">
+                            <img src="images/kh2-logo.png" alt="Kingdom Hearts 2 website" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-img-overlay">
+                            <span>Bekijk</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-name">Kingdom Hearts 2</h3>
+                        <p class="project-desc">Mijn eerste website. Ik heb later de code verbeterd toen ik er opnieuw naar keek. Ik heb hier vooral gespeeld met animaties, UI en klik geluiden.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 24L24 8M24 8H12M24 8V20" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                </a>
+            </article>
+
+            <article class="project-item reveal-up">
+                <a href="https://glr75.nl/" target="_blank" rel="noopener noreferrer" class="project-link-wrap">
+                    <div class="project-index">02</div>
+                    <div class="project-image-cinema">
+                        <div class="project-img-inner">
+                            <img src="images/glr75-logo.png" alt="GLR75" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-img-overlay">
+                            <span>Bekijk</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-name">GLR75</h3>
+                        <p class="project-desc">Een project voor GLR75, samen met andere studenten gemaakt voor het GLR75 schoolfeest. Ik heb onder andere de geschiedenis pagina gebouwd en de wireframes gemaakt.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>JS</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 24L24 8M24 8H12M24 8V20" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <div class="section-label reveal-up">
+                        <span class="label-text">Contact</span>
+                    </div>
+                    <h2 class="contact-heading reveal-up">
+                        Neem gerust<br>
+                        <em>contact</em> op.
+                    </h2>
+                    <div class="contact-links reveal-up">
+                        <a href="mailto:tugra58polat@gmail.com" class="contact-link-item">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">tugra58polat@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tugrakilic/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">tugrakilic</span>
+                        </a>
+                        <a href="https://github.com/Hollow58" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">Hollow58</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form reveal-up" id="contactForm">
+                        <div class="form-field">
+                            <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
+                            <label for="name">Naam</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-field">
+                            <textarea id="message" name="message" required placeholder=" "></textarea>
+                            <label for="message">Bericht</label>
+                        </div>
+                        <button type="submit" class="btn-magnetic submit-btn" data-magnetic>
+                            <span class="btn-magnetic-text">Verstuur Bericht</span>
+                            <span class="btn-magnetic-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <span class="footer-logo">TUGRA</span>
+                <span class="footer-copy">&copy; 2026</span>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigatie">
+                <a href="#home">Home</a>
+                <a href="#about">Over Mij</a>
+                <a href="#projects">Projecten</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/tugrakilic/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/Hollow58" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="mailto:tugra58polat@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+                <a href="#home" class="back-to-top">
+                    <span>Terug naar boven</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 14V2M8 2L2 8M8 2L14 8" stroke="currentColor" stroke-width="1.5"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
